@@ -1,5 +1,5 @@
 <template>
-  <div class="q-pa-md row items-start q-gutter-md">
+  <div class="q-pa-md row justify-center q-gutter-md">
     <q-card class="cardFormat">
       <q-img v-bind:src="this.cardFields.artworkUrl100"></q-img>
 
@@ -16,11 +16,12 @@
 </template>
 
 <script>
+// Componente de Card. Utilizado para mostrar la informacion obtenida del proceso de busqueda.
 export default {
 	name: 'Card',
 	props: {
 		cardFields: {
-			default: { collectionName: 'Ejem', artistName: 'Ej1', artworkUrl100: '', collectionPrice: 0.0 }
+			default: { collectionName: '', artistName: '', artworkUrl100: '', collectionPrice: 0.0 }
 		}
 	}
 }
