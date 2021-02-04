@@ -1,28 +1,23 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
-  </div>
+  <q-layout view="lhr Lpr lfr">
+    <q-page-container>
+      <Search />
+    </q-page-container>
+  </q-layout>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+// inicio de la aplicacion. importa la vista de Search para ser mostrado
+import Search from './pages/Search.vue'
 
 export default {
-  name: 'App',
+  name: 'LayoutDefault',
+
   components: {
-    HelloWorld
+    Search
   }
 }
 </script>
 
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
 </style>
