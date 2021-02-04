@@ -1,24 +1,25 @@
 <template>
   <q-layout view="lhr Lpr lfr">
+    <h3 id="title" class="text-center">{{searchTitle}}</h3>
     <q-page-container>
-      <Index />
+      <Search />
     </q-page-container>
   </q-layout>
 </template>
 
 <script>
-import Index from './components/Index.vue'
+import Search from './pages/Search.vue'
 
 export default {
   name: 'LayoutDefault',
 
   components: {
-    Index
+    Search
   },
 
   data () {
     return {
-      leftDrawerOpen: false
+      searchTitle: 'iTunes Search Index'
     }
   }
 }
