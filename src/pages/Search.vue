@@ -48,7 +48,7 @@ export default {
 		return {
 			searchTitle: 'iTunes Search Index',
 			termText: '',
-			option: null,
+			option: 'all',
 			options: [
         'all', 'audiobook', 'ebook', 'movie', 'musicVideo', 'software', 'podcast'
 			],
